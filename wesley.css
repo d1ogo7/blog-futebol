@@ -1,0 +1,151 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1b4d3e; /* Verde escuro */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #113327;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2ecc71; /* Verde claro ao passar o mouse */
+}
+
+/* Layout Principal */
+.conteudo-principal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Posts */
+.posts {
+    flex: 2;
+    margin-right: 30px;
+}
+
+.post {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.post h2 {
+    color: #1b4d3e;
+    margin-bottom: 10px;
+}
+
+.data {
+    font-size: 0.85rem;
+    color: #777;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.ler-mais {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2ecc71;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ler-mais:hover {
+    text-decoration: underline;
+}
+
+/* Barra Lateral */
+.sidebar {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.sidebar h3 {
+    color: #1b4d3e;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2ecc71;
+    padding-bottom: 5px;
+}
+
+.sidebar p {
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #113327;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    .conteudo-principal {
+        flex-direction: column;
+    }
+    
+    .posts {
+        margin-right: 0;
+    }
+    
+    .sidebar {
+        margin-top: 30px;
+    }
+}
